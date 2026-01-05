@@ -32,6 +32,7 @@ The following storage volumes need to be mapped to the `uyuni-salt-master` conta
 | run-salt-master:/run/salt/master | communication between `salt-master`, `salt-api` and `saline` |
 | srv-salt:/srv/salt | storing custom salt states used by `salt-master` and `salt-api` (for salt ssh) |
 | srv-pillar:/srv/pillar | storing custom pillar data used by `salt-master` and `salt-api` (for salt ssh) |
+| srv-susemanager:/srv/susemanager | storing custom per system states and pillar data used by `salt-master` and `salt-api` |
 | var-salt:/var/lib/salt | storing ssh keys used by `salt-api` for salt ssh clients |
 
 `salt-api` can communicate to `salt-master` the same way as `saline` does with shared volume `run-salt-master:/run/salt/master`.
