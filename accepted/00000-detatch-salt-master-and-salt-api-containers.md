@@ -46,6 +46,8 @@ Why should we **not** do this?
 
   * possible unknown use cases, which doesn't work with such setup
   * more complex setup of containers
+  * not really providing any benefits
+  * can't be used for scaling due to impossibility to split workload between multiple `salt-master`s
 
 # Alternatives
 [alternatives]: #alternatives
